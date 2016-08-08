@@ -17,18 +17,11 @@ imageUrl('http://website.com/image.jpg')
 //=> url("http://website.com/image.jpg")
 ```
 
-## API
+## Rationale
 
-#### `imageUrl(input)` -> `imageUrl`
+You should always wrap your css urls in quotes, because parentheses in a url are valid.
 
-##### input
-
-*Required*
-Type: `string`
-
-An image url.
-
-Returns that given string wrapped in `url("")`
+This makes it easier to do that.
 
 ## License
 
