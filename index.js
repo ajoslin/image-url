@@ -1,5 +1,6 @@
 'use strict'
 
 module.exports = function imageUrl (url) {
-  return 'url("' + String(url) + '")'
+  url = String(url).replace(/"/g, '\\"')
+  return 'url("' + url + '")'
 }
